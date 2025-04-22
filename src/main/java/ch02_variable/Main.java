@@ -56,8 +56,8 @@ public class Main {
         char name3 = '우';
         // char -> 문자 , String -> 문자열
 
-        System.out.println(name1 + name2 + name3);
-        System.out.println("" + name1 + name2 + name3);
+        System.out.println(name1 + name2 + name3);  // 153200
+        System.out.println("" + name1 + name2 + name3); // 염진우
         /*
             이상의 코드에서 알 수 있는 점은 컴퓨터는 생각보다 멍청해서 개발자인 저희가 하나하나 지정을 해줘야 한다는 점입니다.
             문자와 문자열은 서로 다른 개념인데, 문자(하나짜리)를 세 번  더했을 경우에 더이상 문자가 아니라 문자열로 인식되기 때문에
