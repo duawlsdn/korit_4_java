@@ -130,13 +130,16 @@ public class Bank {
         }
         this.pinNumber = pinNumber;
     }
-
-    // etc
-    public void deposit(int amount, int inputPin) {
+    void Error(int inputPin){
         if (this.pinNumber != inputPin) {
             System.out.println("비밀번호가 틀렸습니다.");
             return;
         }
+    }
+
+    // etc
+    public void deposit(int amount, int inputPin) {
+        Error(inputPin);
         if (amount < 0) {
             System.out.println("불가능한 입력 금액입니다.");
             return;
@@ -146,10 +149,7 @@ public class Bank {
     }
 
     void withdraw(int amount, int inputPin){
-        if(this.pinNumber != inputPin){
-            System.out.println("비밀번호가 틀렸습니다.");
-            return;
-        }
+        Error(inputPin);
         if(amount < 1) {
             System.out.println("불가능한 입력 금액입니다.");
             return;

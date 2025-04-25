@@ -16,9 +16,6 @@ public class BankMain {
         System.out.println("\n---입금 금액은 맞지만 비밀번호가 틀린 코드---");
         bank1.deposit(100,1112);
 
-        System.out.println("\n---성공 사례---");
-        bank1.deposit(400,1111);
-
         System.out.println("\n---입금 금액은 맞지만 비밀번호가 틀린 코드---");
         bank1.withdraw(450,1112);
 
@@ -32,13 +29,13 @@ public class BankMain {
         bank1.showAccountInfo();
 
 
-        Bank bank2 = new Bank();
-        bank2.setAccountNum(987654);
-        bank2.setAccountHolder("신사임당");
-        bank2.setBalance(500000);
-        bank2.setPinNumber(2222);
-        bank2.deposit(50000,2222);
-        bank2.withdraw(500000,2222);
-        bank2.showAccountInfo();
+//        Bank bank2 = new Bank();
+//        bank2.setAccountNum(987654);
+//        bank2.setAccountHolder("신사임당");
+//        bank2.setBalance(500000);
+//        bank2.setPinNumber(2222);
+//        bank2.deposit(50000,2222);
+//        bank2.withdraw(500000,2222);
+//        bank2.showAccountInfo();
     }
 }
