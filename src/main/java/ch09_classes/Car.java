@@ -21,8 +21,8 @@ public class Car {
          car2의 색깔 노랑 / 속도 200으로 생성한 후
          각각 drive()/brake()/displayCarInfo() 를 실행, 콘솔창에 출력
      */
-    String color = "";
-    int speed = 0;
+    String color;
+    int speed;
 
     public void drive(){
         System.out.println(color + " 자동차가 주행 중 입니다.\n최고 속도는 "+speed+" 입니다.");
@@ -36,4 +36,6 @@ public class Car {
         String eval = (speed > 100 ? "빠릅니다.": "보통입니다.");
         System.out.println(color + " 자동차가 주행 중 입니다.\n최고 속도는 "+speed+" 입니다."+eval);
     }
+
+    // Constructor
 }
