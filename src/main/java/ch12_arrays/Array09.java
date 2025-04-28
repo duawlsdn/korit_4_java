@@ -1,0 +1,30 @@
+package ch12_arrays;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Array09 {
+    public static void main(String[] args) {
+        // 배열의 정렬
+        Integer[] nums = {8, 6, 4, 2, 1, 7, 9, 5, 10, 3};
+        // 있는 그대로 출력
+        System.out.println("정렬 전 : " + Arrays.toString(nums));
+        // 오름차순 정렬
+        Arrays.sort(nums);      // 오름차순 정렬하는 '정적 메서드'
+        // 이상의 코드에서의 특이점은 메서드 적용 결과를 변수에 대입하지 않았다는 점
+        // 그 의미는 원본 배열인 nums를 그냥 다 바꿔버렸다는 의미로 해석 할 수 있음
+        System.out.println("오름차순 : " + Arrays.toString(nums));
+//        for(int num : nums){
+//            System.out.println(num + " ");
+//        }
+
+        // 내림차순 배열
+        Arrays.sort(nums, Comparator.reverseOrder());   // 원본 배열을 변환
+        System.out.println("내림차순 : " + Arrays.toString(nums));
+
+        // int =/= Integer
+        // int는 기본 자료형에 해당 primitive type
+        // Integer는 정수 관련한 field 및 method 들을 모아둔 class 에 해당.
+        // char 자료형들의 특징들을 모아서 field / method 들을 정의해둔 것이 String
+    }
+}
