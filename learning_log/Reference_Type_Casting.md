@@ -159,5 +159,7 @@ public class CentralControl{
         deviceArray[emptyIndex] = device;
         System.out.println(device.getClass().getSimpleName() + " 장치가 연결 되었습니다.");
     }
+    
+    ... ch15_casting.control 패키지 참고 보기
 }
 ```
