@@ -95,6 +95,9 @@ public static void main(String[] args) {
     factory1.produce("백색 가전");         // 메서드 호출    
 }
 ```
+## 상속 구분
+- 클래스 상속 -> extends
+- 인터페이스 상속 -> implements
 
 # 인터페이스(interface)
 - Java 에서 클래스가 구현해야하는 '메서드들'의 집합을 정의하는 일종의 규약(protocol)
